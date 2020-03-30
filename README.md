@@ -6,9 +6,9 @@
 
     cd $scratch
 
-    curl -k https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-134.0.0-linux-x86_64.tar.gz -O
+    curl -k https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-286.0.0-linux-x86_64.tar.gz -O
 
-    tar -xzf google-cloud-sdk-134.0.0-linux-x86_64.tar.gz 
+    tar -xzf google-cloud-sdk-286.0.0-linux-x86_64.tar.gz 
 
     cd google-cloud-sdk
 
@@ -43,13 +43,13 @@
     xargs -0 -n 1 termux-fix-shebang < <(tr \\n \\0 < ../lines.txt)
 
 
-    tar -czf google-cloud-sdk-134.0.0-linux-x86_64__TERMUX.tar.gz google-cloud-sdk/
+    tar -czf google-cloud-sdk-286.0.0-linux-x86_64__TERMUX.tar.gz google-cloud-sdk/
 
 
 ### download and install 
     export CLOUDSDK_PYTHON=/data/data/com.termux/files/usr/bin/python2.7
-    curl -k https://storage.googleapis.com/gceprd-iso/google-cloud-sdk-134.0.0-linux-x86_64__TERMUX.tar.gz -O
-    tar -xzf google-cloud-sdk-134.0.0-linux-x86_64__TERMUX.tar.gz
+    curl -k https://storage.googleapis.com/gceprd-iso/google-cloud-sdk-286.0.0-linux-x86_64__TERMUX.tar.gz -O
+    tar -xzf google-cloud-sdk-286.0.0-linux-x86_64__TERMUX.tar.gz
     cd google-cloud-sdk
     bash ./install.sh
     
